@@ -1,6 +1,7 @@
 import Aboutsection from './components/Aboutsection'
 import Navbar from './components/Navbar'
 import bg from './assets/bg.png'
+import FeatureSection from './components/FeatureSection'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       >
         <Navbar />
               <Aboutsection />
+              <FeatureSection/>
       </div>
     </>
   )

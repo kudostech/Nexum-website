@@ -33,10 +33,10 @@ function Aboutsection() {
                 <p className=' pl-33 pr-40 text-xl text-white'>$218,929.60 </p>
             </div>
 
-            <div className=' hidden md:flex w-full h-120 lg:px-15 mt-10 '>{/* larger screen version */}
+            <div className=' hidden md:flex w-full h-120 md:mt-15  lg:px-15 lg:mt-10 '>{/* larger screen version */}
 
-                <div className=' w-1/2 h-full '>
-                    <p className='px-4 text-white text-4xl font-semibold '> Unbanking Shipping</p>
+                <div className=' w-1/2 h-full pl-4 '>
+                    <p className='pl-5 text-white text-4xl font-semibold '> Unbanking Shipping</p>
                     <p className=' mt-5 text-white px-4 font-extralight'>
                         <span className='font-semibold'> Nexum (NEXM)</span> is the utility token that aims to power the multi-billion
                         Shipping & Oil industry.
@@ -52,12 +52,12 @@ function Aboutsection() {
                         </div>
                     </div>
                 </div>
-                <div className=' w-1/2 h-full justify-end pr-4'>
-                    <div className='flex justify-end mt-2'>
-                        <img src={Data} alt="" />
+                <div className=' w-1/2 h-full justify-end pr-8'>
+                    <div className='flex justify-end mt-2 md:pl-50 lg:pl-100 '>
+                        <img className='w-120 h-10 lg:h-14' src={Data} alt="" />
                     </div>
                     <div className='flex justify-end '>
-                        <img className='md:mt-10 lg:w-100
+                        <img className='md:mt-15 md:h-42 lg:w-100
      ' src={Vector} alt="" />
                     </div>
 
