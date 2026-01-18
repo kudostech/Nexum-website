@@ -165,61 +165,117 @@ function FeatureSection() {
                         Nexum Platform
                     </p>
 
-                   <div className='flex gap-4 ml-6 lg:ml-70' >
-                     <div className='mt-15 md:border border-[#023153] rounded-xl md:w-85'>
-                        <p className=' text-[#00f0c4] text-4xl mt-10 font-medium text-center '>
-                            Problems
-                        </p>
-                        <p className='text-center mt-5 text-white font-light'>
-                            The very nature of shipping industry <br />presented big challenges that lead to:
-                        </p>
-                        <div className='mt-6 flex flex-col gap-6'>
-                            <div className=' flex mx-6 gap-4'>
-                                <img src={Bulletin} alt="-" />
-                                <p className='text-white font-light'> Expensive Cross-border payments</p>
-                            </div>
-                            <div className=' flex mx-6 gap-4'>
-                                <img src={Bulletin} alt="-" />
-                                <p className='text-white font-light'> Delivery delays</p>
-                            </div>
-                            <div className=' flex mx-6 gap-4'>
-                                <img className='h-6' src={Bulletin} alt="-" />
-                                <p className='text-white font-light'> Difficulty in coordination within ship managers and between and buyers</p>
-                            </div>
+                    
+                        <div className='md:hidden flex flex-col gap-4 ml-6 ' > {/* when on mobile screen */}
+                        <div className='mt-15 md:border border-[#023153] rounded-xl md:w-85'>
+                            <p className=' text-[#00f0c4] text-4xl mt-10 font-medium text-center '>
+                                Problems
+                            </p>
+                            <p className='text-center mt-5 text-white font-light'>
+                                The very nature of shipping industry <br />presented big challenges that lead to:
+                            </p>
+                            <div className='mt-6 flex flex-col gap-6'>
+                                <div className=' flex mx-6 gap-4'>
+                                    <img src={Bulletin} alt="-" />
+                                    <p className='text-white font-light'> Expensive Cross-border payments</p>
+                                </div>
+                                <div className=' flex mx-6 gap-4'>
+                                    <img src={Bulletin} alt="-" />
+                                    <p className='text-white font-light'> Delivery delays</p>
+                                </div>
+                                <div className=' flex mx-6 gap-4'>
+                                    <img className='h-6' src={Bulletin} alt="-" />
+                                    <p className='text-white font-light'> Difficulty in coordination within ship managers and between and buyers</p>
+                                </div>
 
-                            <div className=' flex mx-6 gap-4'>
-                                <img className='h-6' src={Bulletin} alt="-" />
-                                <p className='text-white font-light'> Financial loses resulted in bankruptcy</p>
-                            </div>
+                                <div className=' flex mx-6 gap-4'>
+                                    <img className='h-6' src={Bulletin} alt="-" />
+                                    <p className='text-white font-light'> Financial loses resulted in bankruptcy</p>
+                                </div>
 
-                            <div className=' flex mx-6 gap-4'>
-                                <img className='h-6' src={Bulletin} alt="-" />
-                                <p className='text-white font-light'> Fragmented and incomplete data</p>
+                                <div className=' flex mx-6 gap-4'>
+                                    <img className='h-6' src={Bulletin} alt="-" />
+                                    <p className='text-white font-light'> Fragmented and incomplete data</p>
+                                </div>
                             </div>
                         </div>
+
+                        <div className='mt-15 md:border border-[#023153] rounded-xl md:w-85' >
+                            <p className=' mt-10 text-[#00f0c4] text-4xl font-medium text-center '>
+                                Solution
+                            </p>
+
+                            <p className=' mt-10 text-white font-extralight mx-5 text-center'>
+                                Value is created only if you can provide solution for an existing problem.
+                            </p>
+                            <p className=' mt-5 text-white font-extralight mx-5 text-center'>
+                                Nexum Platform powered by blockchain technology provides the solution by combining:
+                            </p>
+
+                            <img className='items-center p-10' src={Blockchain} alt="" />
+
+
+                        
                     </div>
 
-                    <div className='mt-15 md:border border-[#023153] rounded-xl md:w-85' >
-                        <p className=' mt-10 text-[#00f0c4] text-4xl font-medium text-center '>
-                            Solution
-                        </p>
-
-                        <p className=' mt-10 text-white font-extralight mx-5 text-center'>
-                            Value is created only if you can provide solution for an existing problem.
-                        </p>
-                        <p className=' mt-5 text-white font-extralight mx-5 text-center'>
-                            Nexum Platform powered by blockchain technology provides the solution by combining:
-                        </p>
-
-                        <img className='items-center p-10' src={Blockchain} alt="" />
-
-         
                     </div>
-                   </div>
-               <div className=' rounded-md mx-6 mb-4 mt-10 border  border-[#054776] lg:mx-68'>
-                            <p className=' px-2 text-center font-extralight m py-4 text-white'> Nexum Platform creates a <span className='font-bold'>transparent, efficient and cost- <br /> saving ecosystem </span>for each  player in the Shipping & Oil industry. <br /> </p>
+
+
+                    <div className='hidden md:flex gap-4 ml-6 lg:ml-70' > {/* when on larger screen */}
+                        <div className='mt-15 md:border border-[#023153] rounded-xl md:w-85'>
+                            <p className=' text-[#00f0c4] text-4xl mt-10 font-medium text-center '>
+                                Problems
+                            </p>
+                            <p className='text-center mt-5 text-white font-light'>
+                                The very nature of shipping industry <br />presented big challenges that lead to:
+                            </p>
+                            <div className='mt-6 flex flex-col gap-6'>
+                                <div className=' flex mx-6 gap-4'>
+                                    <img src={Bulletin} alt="-" />
+                                    <p className='text-white font-light'> Expensive Cross-border payments</p>
+                                </div>
+                                <div className=' flex mx-6 gap-4'>
+                                    <img src={Bulletin} alt="-" />
+                                    <p className='text-white font-light'> Delivery delays</p>
+                                </div>
+                                <div className=' flex mx-6 gap-4'>
+                                    <img className='h-6' src={Bulletin} alt="-" />
+                                    <p className='text-white font-light'> Difficulty in coordination within ship managers and between and buyers</p>
+                                </div>
+
+                                <div className=' flex mx-6 gap-4'>
+                                    <img className='h-6' src={Bulletin} alt="-" />
+                                    <p className='text-white font-light'> Financial loses resulted in bankruptcy</p>
+                                </div>
+
+                                <div className=' flex mx-6 gap-4'>
+                                    <img className='h-6' src={Bulletin} alt="-" />
+                                    <p className='text-white font-light'> Fragmented and incomplete data</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='mt-15 md:border border-[#023153] rounded-xl md:w-85' >
+                            <p className=' mt-10 text-[#00f0c4] text-4xl font-medium text-center '>
+                                Solution
+                            </p>
+
+                            <p className=' mt-10 text-white font-extralight mx-5 text-center'>
+                                Value is created only if you can provide solution for an existing problem.
+                            </p>
+                            <p className=' mt-5 text-white font-extralight mx-5 text-center'>
+                                Nexum Platform powered by blockchain technology provides the solution by combining:
+                            </p>
+
+                            <img className='items-center p-10' src={Blockchain} alt="" />
+
 
                         </div>
+                    </div>
+                    <div className=' rounded-md mx-6 mb-4 mt-10 border  border-[#054776] lg:mx-68'>
+                        <p className=' px-2 text-center font-extralight m py-4 text-white'> Nexum Platform creates a <span className='font-bold'>transparent, efficient and cost- <br /> saving ecosystem </span>for each  player in the Shipping & Oil industry. <br /> </p>
+
+                    </div>
                 </div>
 
 
