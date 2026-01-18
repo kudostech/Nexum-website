@@ -2,7 +2,7 @@ import Aboutsection from './components/Aboutsection'
 import Navbar from './components/Navbar'
 import bg from './assets/bg.png'
 import FeatureSection from './components/FeatureSection'
-
+import Nexumtoken from './components/Nexumtoken'
 function App() {
   return (
     <>
