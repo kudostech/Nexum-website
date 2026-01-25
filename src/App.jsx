@@ -5,6 +5,7 @@ import FeatureSection from './components/FeatureSection'
 import Nexumtoken from './components/Nexumtoken'
 import Vision from './components/Vision'
 import Howtobuy from './components/Howtobuy'
+import Blog from './components/Blog'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
              <Nexumtoken/>
                  <Vision/>
                  <Howtobuy/>
+                 <Blog/>
       </div>
     </>
   )
