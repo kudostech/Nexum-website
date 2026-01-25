@@ -1,6 +1,6 @@
 import Aboutsection from './components/Aboutsection'
 import Navbar from './components/Navbar'
-import bg from './assets/bg.png'
+import Bg from './assets/Bg.png'
 import FeatureSection from './components/FeatureSection'
 import Nexumtoken from './components/Nexumtoken'
 import Vision from './components/Vision'
@@ -12,7 +12,7 @@ function App() {
     <>
       <div
         className="w-full h-screen bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${bg})` }}
+        style={{ backgroundImage: `url(${Bg})` }}
       >
         <Navbar />
               <Aboutsection />
