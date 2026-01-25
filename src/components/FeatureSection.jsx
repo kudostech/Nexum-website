@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDroplet } from '@fortawesome/free-solid-svg-icons'
 import Bulletin from '../assets/Bulletin.png'
 import Blockchain from '../assets/Blockchain.png'
+
 function FeatureSection() {
     return (
         <div>
