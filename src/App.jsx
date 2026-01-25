@@ -4,6 +4,8 @@ import bg from './assets/bg.png'
 import FeatureSection from './components/FeatureSection'
 import Nexumtoken from './components/Nexumtoken'
 import Vision from './components/Vision'
+import Howtobuy from './components/Howtobuy'
+
 function App() {
   return (
     <>
@@ -16,6 +18,7 @@ function App() {
               <FeatureSection/>
              <Nexumtoken/>
                  <Vision/>
+                 <Howtobuy/>
       </div>
     </>
   )
