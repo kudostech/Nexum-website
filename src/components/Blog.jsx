@@ -48,7 +48,7 @@ function Blog() {
 
 
       {/* when on larger screens */}
-      <div>
+      <div className=" hidden md:block">
         <h3 className=" text-[#14e4d3] text-center mx-20 mt-20 text-3xl">
           {" "}
           BLOG AND PUBLICATIONS

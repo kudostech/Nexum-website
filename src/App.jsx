@@ -1,18 +1,20 @@
 import Aboutsection from './components/Aboutsection'
 import Navbar from './components/Navbar'
-import Bg from './assets/Bg.png'
+
 import FeatureSection from './components/FeatureSection'
 import Nexumtoken from './components/Nexumtoken'
 import Vision from './components/Vision'
 import Howtobuy from './components/Howtobuy'
 import Blog from './components/Blog'
+import Contactus from './components/Contactus'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <>
       <div
-        className="w-full h-screen bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${Bg})` }}
+        className="w-full h-screen bg-cover bg-center bg-no-repeat overflow-x-hidden"
+     
       >
         <Navbar />
               <Aboutsection />
@@ -21,6 +23,8 @@ function App() {
                  <Vision/>
                  <Howtobuy/>
                  <Blog/>
+                  <Contactus/>
+                  <Footer/>
       </div>
     </>
   )
