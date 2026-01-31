@@ -1,5 +1,5 @@
 import React from 'react'
-import Coingecko from '../assets/Coingecko.svg'
+import coingecko from '../assets/Coingecko.svg'
 import Etherscan from '../assets/Etherscan.jpeg'
 import ApeSwap from '../assets/ApeSwap.png'
 import PancakeSwap from '../assets/PancakeSwap.png'
@@ -16,7 +16,7 @@ function FeatureSection() {
         <div>
 
             <div className='mt-24'>
-                <p className='text-4xl text-center text-[#05b1ba] md:text-6xl'> NEXUM <span>now on:</span></p>
+                <h1 className=' text-3xl font-bold text-center text-[#05b1ba] md:text-6xl'> NEXUM now on:</h1>
 
 
                 <div className='flex flex-col gap-6 mt-8 md:hidden '>
@@ -29,7 +29,7 @@ function FeatureSection() {
                     </div>
 
                     <div className=' text-white pl-30 items-center flex  gap-2'>
-                        <img className=' w-6' src={Coingecko} alt="coingecko" />
+                        <img className=' w-6' src={coingecko} alt="coingecko" />
                         <p className='text-xl'> CoinGecko</p>
                     </div>
 
@@ -66,7 +66,7 @@ function FeatureSection() {
                         </div>
 
                         <div className=' text-white items-center flex  gap-2'>
-                            <img className=' w-6' src={Coingecko} alt="coingecko" />
+                            <img className=' w-6' src={coingecko} alt="coingecko" />
                             <p className='text-xl'> CoinGecko</p>
                         </div>
 

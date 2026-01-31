@@ -93,7 +93,7 @@ function Contactus() {
               alt="Contact Cartoon"
             />
           </div>
-          <div className=" border-[#048d91] flex-1  w-full">
+          <form className=" flex-1 w-full">
             <div className=" flex gap-4  ">
               <input
                 className="border-[#1a3040] p-2 rounded-md border-2 flex-1 text-[#d0dde6] "
@@ -113,11 +113,12 @@ function Contactus() {
               placeholder="Enter your email address"
             />
 
-            <input
-              className="border-[#1a3040] px-3 mt-4 w-full pt-2 pb-14  rounded-md border-2  text-[#d0dde6] "
-              type="text"
-              placeholder="write message..."
-            />
+            <textarea 
+            
+            className="border-[#1a3040] mt-4 w-full  rounded-md border-2  text-[#d0dde6] h-34  p-2   "
+              type="text"  placeholder="write message..." ></textarea>
+              
+          
 
             <div className=" flex gap-2 mt-4 ">
               <input type="checkbox" />
@@ -135,7 +136,7 @@ function Contactus() {
             <button className=" mt-4  text-white border-[#048d91] border-2 py-2 px-40 rounded-xl cursor-pointer ">
               Send
             </button>
-          </div>
+          </form>
         </div>
        
         <div className=" mt-30  flex">
@@ -167,19 +168,19 @@ function Contactus() {
             <FontAwesomeIcon icon={faTelegram} />
             <FontAwesomeIcon icon={faTwitter} />
           </div>
-            <div className="flex  text-white border-[#048d91] m-2 p-2 border-2 items-center mt-2 rounded-xl cursor-pointer gap-2 ">
+            <button className="flex  text-white border-[#048d91] m-2 p-2 border-2 items-center mt-2 rounded-xl cursor-pointer gap-2 ">
               <p className="text-white text-nowrap lg:ml-10"> Join our community</p>
               <FontAwesomeIcon icon={faTelegram} />
-            </div>
+            </button>
             </div>
 
 
 
             <div className=" m-2  flex-1  ">
-                <div className="  bg-[#00c09d] flex-col rounded-full w-12 h-10 ml-12 lg:ml-50 py-6 px-6 mt-6 shadow-[0_0_10px_#00c09d] items-center flex justify-center cursor-pointer ">
+                <button className="  bg-[#00c09d] flex-col rounded-full w-12 h-10 ml-12 lg:ml-50 py-6 px-6 mt-6 shadow-[0_0_10px_#00c09d] items-center flex justify-center cursor-pointer ">
                   <FontAwesomeIcon className="item center cursor-pointer" icon={faAngleUp} />
                   <p className="text-center">Up</p>
-                </div>
+                </button>
             </div>
           </div>
         </div>

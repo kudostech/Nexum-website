@@ -96,7 +96,7 @@ function Navbar() {
 
 
       {/* when on desktop */}
-      <div className=' hidden md:hidden  lg:flex items-center justify-between mx-20  ' >
+      <div className=' hidden md:hidden  lg:flex items-center justify-between mx-24 mb-20 ' >
         <Link to="/" className='gap-1 flex mt-10 '>
           <img className='w-6' src={logo} alt="" />
           <p className='text-white font-bold'> NEXUM </p>
