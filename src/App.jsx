@@ -9,6 +9,8 @@ import Blog from './components/Blog'
 import Contactus from './components/Contactus'
 import Footer from './components/Footer'
 import Faq from './components/Faq'
+import  Team from './components/Team'
+import Media from './components/Media'
 
 
 function App() {
@@ -24,8 +26,10 @@ function App() {
                  <Vision/>
                  <Howtobuy/>
                  <Blog/>
+                   <Team/>
                  <Faq/>
                   <Contactus/>
+                  <Media/>
                   <Footer/>
       </div>
     </>

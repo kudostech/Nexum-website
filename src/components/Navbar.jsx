@@ -9,15 +9,13 @@ import { faX } from '@fortawesome/free-solid-svg-icons'
 function Navbar() {
 
   const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <nav>
       {/* when on mobile */}
-      <div className=' md:hidden lg:hidden mx-10 flex justify-between '>
-
+      <div className=' md:hidden mx-10 flex justify-between '>
         <div className='flex items-center' >
           <Link to="/" className=' gap-1 flex mt-10'>
-            <img className='w-6' src={logo} alt="" />
+            <img  src={logo} alt="" />
             <p className='text-white font-bold' >NEXUM</p>
           </Link>
         </div>
@@ -36,15 +34,28 @@ function Navbar() {
       {menuOpen && (
         <div className="fixed inset-0 z-50 bg-[#01192b] md:hidden">
           {/* Close button */}
-          <div className="flex justify-end p-6">
-            <button
-              className="text-white cursor-pointer"
+          <div className='  flex justify-between mx-8 mt-10' >
+          <Link to="/" className=' gap-1 flex justify-center items-center '>
+            <img className='w-10' src={logo} alt="" />
+            <p className='text-white text-xl  font-bold leading-4' >NEXUM <br /><span className='font-extralight text-xs'> PLATFORM</span></p>
+          </Link>
+           <button
+              className="text-white text-2xl cursor-pointer"
               onClick={() => setMenuOpen(false)}
             >
               <FontAwesomeIcon icon={faX} />
             </button>
+        </div>
+          <div className="flex justify-end p-6">
           </div>
-
+          {/* Menu items */}
+          <ul className=' flex text-5xl flex-col h-full items-center  text-white gap-10 '>
+            <li className="p-4 "> <a href=""> About</a></li>
+            <li className="p-4 "> <a href="">Team</a></li>
+            <li className="p-4 "> <a href="">Features</a></li>
+            <li className="p-4 "> <a href="">FAQ</a></li>
+            <li className="p-4 "> <a href="">Token</a></li>
+          </ul>
         </div>
       )};
 
