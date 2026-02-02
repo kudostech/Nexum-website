@@ -1,5 +1,5 @@
 import React from 'react'
-import coingecko from '../assets/Coingecko.svg'
+import coingecko from '../assets/coingecko.svg'
 import Etherscan from '../assets/Etherscan.jpeg'
 import ApeSwap from '../assets/ApeSwap.png'
 import PancakeSwap from '../assets/PancakeSwap.png'
