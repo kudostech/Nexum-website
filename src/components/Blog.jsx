@@ -7,7 +7,7 @@ import Yahoo from "../assets/Yahoo.png";
 import Publish from "../assets/Publish.png";
 function Blog() {
   return (
-    <div>
+    <div id="blog">
       <div className=" md:hidden"> {/* when on mobile */}
         <h3 className=" text-[#14e4d3] text-center mx-20 mt-20 text-3xl">
           {" "}

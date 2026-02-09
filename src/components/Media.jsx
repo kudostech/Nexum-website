@@ -37,9 +37,9 @@ function Media() {
                   </div>
         </div>
         
-         <div className=" hidden mt-30  md:flex"> {/* desktop version */}
-          <div className=" m-2 h-30 flex-1 flex lg:ml-20 ">
-            <div className=" m-2  flex-1 flex-col pt-3 pl-5">
+         <div className=" hidden mt-30  md:flex lg:mx-40"> {/* desktop version */}
+          <div className=" m-2 h-30 flex-1 flex  ">
+            <div className=" m-2  flex-1 flex-col pt-3 pl-5 lg:pl-0 ">
               <div>
                 <Link to="/" className="flex gap-1 ">
                   <img className="w-6" src={logo} alt="" />
@@ -54,7 +54,7 @@ function Media() {
               </div>
             </div>
             <div className=" mt-4  flex-1">
-              <p className=" text-white text-center px-2 lg:px-16 ">
+              <p className=" text-white text-center px-2 lg:px-10 ">
                 3 Fraser Street #05-25 Duo Tower, Singapore 189352
               </p>
             </div>
@@ -71,7 +71,7 @@ function Media() {
                 <FontAwesomeIcon icon={faTwitter} />
               </div>
               <button className="flex  text-white border-[#048d91] m-2 p-2 border-2 items-center mt-2 rounded-xl cursor-pointer gap-2 ">
-                <p className="text-white text-nowrap lg:ml-10">
+                <p className="text-white text-nowrap">
                   {" "}
                   Join our community
                 </p>

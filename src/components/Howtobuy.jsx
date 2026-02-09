@@ -8,9 +8,10 @@ import polygon from "../assets/polygon.png";
 import HTB from "../assets/HTB.png";
 import HTBLG from "../assets/HTBLG.png";
 import Pdf from "../assets/Pdf.png";
+import whitepaper from "../assets/whitepaper.pdf"
 function Howtobuy() {
   return (
-    <div>
+    <div id="buy">
       <div className=" md:hidden">
         {" "}
         {/* when on mobile */}
@@ -84,12 +85,13 @@ function Howtobuy() {
         <h3 className="text-white text-center mt-10">
           Download our White Paper to learn more
         </h3>
-        <button className=" border-[#04adc0] border mt-4 ml-8 mb-2 rounded-xl">
-          <div className=" flex px-28 py-4 ">
+       <a href={whitepaper} download>
+         <button
+        className=" border-[#04adc0] border flex px-28 py-4  mt-4 ml-8 mb-2 rounded-xl">
             <p className="text-white mr-2">White Paper.pdf</p>
             <img src={Pdf} alt="" />
-          </div>
         </button>
+       </a>
       </div>
 
       {/* when on larger screen  */}
@@ -161,15 +163,19 @@ function Howtobuy() {
           <img className=" w-4/5 " src={HTBLG} alt="" />
         </div>
 
-        <h3 className="text-white text-center ">
+         
+          <h3 className="text-white text-center ">
           Download our White Paper to learn more
         </h3>
-        <button className=" cursor-pointer border-[#04adc0] border mt-4 ml-50 mb-2 rounded-xl lg:ml-114">
+        
+        <a href={whitepaper} download>
+          <button className=" cursor-pointer border-[#04adc0] border mt-4 ml-50 mb-2 rounded-xl lg:ml-114">
           <div className=" flex px-28 py-4 ">
             <p className="text-white mr-2">White Paper.pdf</p>
             <img src={Pdf} alt="" />
           </div>
         </button>
+        </a>
       </div>
     </div>
   );

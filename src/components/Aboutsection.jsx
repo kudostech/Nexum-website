@@ -7,10 +7,8 @@ import Hrs from "../assets/Hrs.png";
 
 function Aboutsection() {
   return (
-    <div
-      className=" "
-    >
-      <div className=" md:hidden flex flex-col gap-4 mt-10">
+    <div>
+      <div id="about" className="  md:hidden flex flex-col gap-4 mt-20">
         {" "}
         {/* mobile version */}
         <p className="text-center text-white text-3xl font-semibold px-7">
@@ -71,7 +69,14 @@ function Aboutsection() {
             <p className="items-center mt-1.5"> Explore our community:</p>
             <div className=" gap-3 cursor-pointer mt-3 flex pb-2 ">
               <FontAwesomeIcon icon={faTelegram} />
-              <FontAwesomeIcon icon={faTwitter} />
+             <a
+              href="https://x.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+  <FontAwesomeIcon icon={faTwitter} />
+</a>
+
             </div>
           </div>
         </div>

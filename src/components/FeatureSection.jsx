@@ -13,7 +13,7 @@ import Blockchain from '../assets/Blockchain.png'
 
 function FeatureSection() {
     return (
-        <div>
+        <div id='features'>
 
             <div className='mt-24'>
                 <h1 className=' text-3xl font-bold text-center text-[#05b1ba] md:text-6xl'> NEXUM now on:</h1>

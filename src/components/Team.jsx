@@ -25,8 +25,8 @@ import ibe from "../assets/ibe.png";
 
 function Team() {
   return (
-    <section>
-      <div className=" md:hidden">
+    <section id="team">
+      <div  className=" md:hidden">
         {" "}
         {/* when on mobile */}
         <h1 className=" text-center text-4xl mt-20 text-white"> Co-Founders</h1>
@@ -433,7 +433,7 @@ function Team() {
         </div>
       </div>
 
-      <div className=" hidden md:block ">
+      <div className=" hidden md:block lg:mx-40 ">
         {" "}
         {/* when on large screens */}
         <h1 className=" text-center text-5xl mt-40 text-white"> Co-Founders</h1>

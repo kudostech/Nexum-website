@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Contactus() {
   return (
-    <section>
+    <section id="contact">
       <div className=" md:hidden">
         <h1 className=" text-center text-4xl mt-20 text-white">
           {" "}
@@ -53,7 +53,7 @@ function Contactus() {
         </form>
       </div>
 
-      <div className="hidden md:block mx-10">
+      <div className="hidden md:block mx-10 lg:mx-40  ">
         {" "}
         {/* when on medium and larger screens */}
         <h1 className="text-white mt-20 ml-4 text-5xl mb-10"> Get in Touch</h1>

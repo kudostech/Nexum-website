@@ -2,7 +2,7 @@ import React from 'react'
 
 function Vision() {
   return (
-    <div> 
+    <div id='vision'> 
         {/* when on mobile */}
         <div className=' md:hidden bg-[#012947] rounded-xl h-120 mx-18 mt-10' >
            <p className='text-center text-white pt-6 text-3xl'> Vision </p>

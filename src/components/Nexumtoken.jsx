@@ -8,7 +8,7 @@ import fueltrade from '../assets/fueltrade.png'
 import marasco from '../assets/marasco.png'
 function Nexumtoken() {
   return (
-    <div>
+    <div id='token'>
       <div className='mt-20 md:hidden '> {/* when on mobile */}
         <p className='text-center text-white text-4xl font-bold'>NEXM Token</p>
         <p className='font-extralight text-center mt-5 text-white'>
