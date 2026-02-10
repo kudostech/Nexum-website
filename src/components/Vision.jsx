@@ -4,7 +4,7 @@ function Vision() {
   return (
     <div id='vision'> 
         {/* when on mobile */}
-        <div className=' md:hidden bg-[#012947] rounded-xl h-120 mx-18 mt-10' >
+        <div className=' md:hidden hover:bg-[#012947] border-[#012743] border-2 rounded-xl h-120 mx-18 mt-10' >
            <p className='text-center text-white pt-6 text-3xl'> Vision </p>
        
          <p className=' text-white text-center px-4 mt-4 font-light'>

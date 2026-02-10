@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -14,22 +13,21 @@ function Navbar() {
       {/* when on mobile */}
       <div
         className="  md:hidden bg-[#01192b] rounded-b-lg ]
- fixed top-0 left-0 z-20 w-full items-center px-6 h-16 flex justify-between "
+ fixed top-0 left-0  w-full items-center px-6 h-16 flex justify-between "
       >
-        <Link
+        <div
           onClick={() => {
             document.getElementById("nav")?.scrollIntoView({
               behavior: "smooth",
             });
           }}
-          to="/"
-          className=" gap-1 items-center  flex "
+          className=" gap-1 items-center flex "
         >
-          <img className="w-6" src={logo} alt="" />
+          <img className="w-6" src={logo} alt=""/>
           <p className="text-white font-bold">NEXUM</p>
-        </Link>
+        </div>
 
-        <div
+        <button
           className=" text-white cursor-pointer "
           onClick={() => setMenuOpen(!menuOpen)}
         >
@@ -38,18 +36,18 @@ function Navbar() {
           ) : (
             <FontAwesomeIcon icon={faBars} />
           )}
-        </div>
+        </button>
       </div>
       {menuOpen && (
-        <div className=" z-50 fixed inset-0 bg-[#01192b] md:hidden">
+        <div className=" fixed inset-0 bg-[#01192b] md:hidden">
           <div className="  flex justify-between mx-8 mt-10">
-            <Link to="/" className=" gap-1 flex justify-center items-center ">
+            <div to="/" className=" gap-1 flex justify-center items-center ">
               <img className="" src={logo} alt="" />
               <p className="text-white text-xl  font-bold leading-4">
                 NEXUM <br />
                 <span className="font-extralight text-xs"> PLATFORM</span>
               </p>
-            </Link>
+            </div>
 
             {/* Close button */}
             <button
@@ -133,10 +131,10 @@ function Navbar() {
   "
         >
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 ml-">
+          <div to="/" className="flex items-center gap-2 ml-">
             <img className="w-6" src={logo} alt="Nexum logo" />
             <span className="text-white font-bold text-lg">NEXUM</span>
-          </Link>
+          </div>
 
           {/* Nav Links */}
           <ul
@@ -241,10 +239,10 @@ function Navbar() {
       </div>
       {/* when on desktop */}
       <div className=" hidden md:hidden  lg:flex items-center justify-between mx-24 mb-20 ">
-        <Link to="/" className="gap-1 flex mt-10 ">
+        <div to="/" className="gap-1 flex mt-10 ">
           <img className="w-6" src={logo} alt="" />
           <p className="text-white font-bold"> NEXUM </p>
-        </Link>
+        </div>
 
         <ul
           className=" flex gap-12
@@ -319,7 +317,7 @@ font-light text-white items-center ml-5 mt-10"
           
         </ul>
 
-        <Link to="/">
+        
           <button onClick={() => {
                 document.getElementById("contact")?.scrollIntoView({
                   behavior: "smooth",
@@ -332,7 +330,7 @@ font-light text-white items-center ml-5 mt-10"
             {" "}
             Contact
           </button>
-        </Link>
+        
       </div>
     </nav>
   );

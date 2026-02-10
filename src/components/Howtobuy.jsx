@@ -36,7 +36,7 @@ function Howtobuy() {
             <p className="text-l">QUICKSWAP</p>
           </div>
         </div>
-        <div className=" border border-[#033558] mx-10 rounded-2xl mt-10">
+        <div className=" border cursor-pointer hover:bg-[#012743] border-[#033558] mx-10 rounded-2xl mt-10">
           <h3 className=" text-white font-extralight mt-10 ml-10">
             {" "}
             Token name:
@@ -87,7 +87,7 @@ function Howtobuy() {
         </h3>
        <a href={whitepaper} download>
          <button
-        className=" border-[#04adc0] border flex px-28 py-4  mt-4 ml-8 mb-2 rounded-xl">
+        className=" hover:bg-[#012947] cursor-pointer border-[#04adc0] border flex px-28 py-4  mt-4 ml-8 mb-2 rounded-xl">
             <p className="text-white mr-2">White Paper.pdf</p>
             <img src={Pdf} alt="" />
         </button>
@@ -169,7 +169,7 @@ function Howtobuy() {
         </h3>
         
         <a href={whitepaper} download>
-          <button className=" cursor-pointer border-[#04adc0] border mt-4 ml-50 mb-2 rounded-xl lg:ml-114">
+          <button className=" hover:bg-[#012947] cursor-pointer border-[#04adc0] border mt-4 ml-50 mb-2 rounded-xl lg:ml-114">
           <div className=" flex px-28 py-4 ">
             <p className="text-white mr-2">White Paper.pdf</p>
             <img src={Pdf} alt="" />

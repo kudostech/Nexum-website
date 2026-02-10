@@ -29,22 +29,22 @@ function Media() {
                     <FontAwesomeIcon icon={faTelegram} />
                     <FontAwesomeIcon icon={faTwitter} />
                   </div>
-                  <div className=" mx-8 text-white border-[#048d91]  border-2 py-4 px-16 items-center  rounded-xl cursor-pointer ">
+                  <button className=" mx-8 text-white border-[#048d91] hover:bg-[#012947] border-2 py-4 px-16 items-center  rounded-xl cursor-pointer ">
                     <div className="flex items-center justify-center gap-3">
                       <p className="text-xl"> Join our community</p>
                       <FontAwesomeIcon icon={faTelegram} />
                     </div>
-                  </div>
+                  </button>
         </div>
         
-         <div className=" hidden mt-30  md:flex lg:mx-40"> {/* desktop version */}
+         <div className=" hidden mt-10  md:flex lg:mx-40"> {/* desktop version */}
           <div className=" m-2 h-30 flex-1 flex  ">
             <div className=" m-2  flex-1 flex-col pt-3 pl-5 lg:pl-0 ">
               <div>
-                <Link to="/" className="flex gap-1 ">
+                <div className="flex gap-1 ">
                   <img className="w-6" src={logo} alt="" />
                   <h2 className="text-white font-bold">NEXUM</h2>
-                </Link>
+                </div>
               </div>
               <div className=" flex mx-auto mt-4 items-center ">
                 <div className=" border-2 bg-white rounded-full w-4 h-4 "></div>
@@ -70,7 +70,7 @@ function Media() {
                 <FontAwesomeIcon icon={faTelegram} />
                 <FontAwesomeIcon icon={faTwitter} />
               </div>
-              <button className="flex  text-white border-[#048d91] m-2 p-2 border-2 items-center mt-2 rounded-xl cursor-pointer gap-2 ">
+              <button className="flex  text-white hover:bg-[#012947] border-[#048d91] m-2 p-2 border-2 items-center mt-2 rounded-xl cursor-pointer gap-2 ">
                 <p className="text-white text-nowrap">
                   {" "}
                   Join our community
@@ -80,7 +80,14 @@ function Media() {
             </div>
 
             <div className=" m-2  flex-1  ">
-              <button className="  bg-[#00c09d] flex-col rounded-full w-12 h-10 ml-12 lg:ml-50 py-6 px-6 mt-6 shadow-[0_0_10px_#00c09d] items-center flex justify-center cursor-pointer ">
+              <button className=" bg-[#00c09d] flex-col rounded-full w-12 h-10 ml-12 lg:ml-50 py-6 px-6 mt-6 shadow-[0_0_10px_#00c09d] items-center flex justify-center cursor-pointer "
+              onClick={ ()=> {
+                document.getElementById('nav')?.scrollIntoView(
+                  {
+                    behavior: 'smooth'
+                  }
+                )
+              }}>
                 <FontAwesomeIcon
                   className="item center cursor-pointer"
                   icon={faAngleUp}

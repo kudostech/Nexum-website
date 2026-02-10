@@ -28,8 +28,19 @@ function Aboutsection() {
         <div className="mt-12 items-center text-center text-white">
           <p> Explore our community:</p>
           <div className=" gap-3 cursor-pointer mt-3 flex justify-center">
-            <FontAwesomeIcon icon={faTelegram} />
-            <FontAwesomeIcon icon={faTwitter} />
+        <a href="http://web.telegram.org/a/"
+           target="_blank" 
+           rel="noopener noreferrer"
+           >
+          <FontAwesomeIcon icon={faTelegram} /></a>    
+             
+                <a
+              href="https://x.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+  <FontAwesomeIcon icon={faTwitter} />
+</a>
           </div>
         </div>
         <img className=" px-20" src={Data} alt="" />
@@ -68,7 +79,10 @@ function Aboutsection() {
           <div className="flex text-white gap-2 mt-15 px-4 ">
             <p className="items-center mt-1.5"> Explore our community:</p>
             <div className=" gap-3 cursor-pointer mt-3 flex pb-2 ">
-              <FontAwesomeIcon icon={faTelegram} />
+           <a href="http://web.telegram.org/a/"
+           target="_blank"
+           rel="noopener noreferrer"
+           ><FontAwesomeIcon icon={faTelegram} /></a>    
              <a
               href="https://x.com"
               target="_blank"

@@ -17,10 +17,10 @@ function Nexumtoken() {
         <div className='mt-4 flex flex-col gap-4'>
 
 
-          <p className='text-center px-10 text-white mt-20'>We aim to achieve that by <br /> partnering with Nexum Platform</p>
+          <p className='text-center px-10 text-white mt-5'>We aim to achieve that by <br /> partnering with Nexum Platform</p>
         </div>
 
-        <div className='mt-20 flex items-center '>
+        <div className='mt-10 flex items-center '>
           <img className=' ml-40 w-10 ' src={logo} alt="" />
           <p className='  leading-3 text-white ml-2 font-bold text-2xl mt-2'> NEXUM <br /> <span className='font-light text-xs'>PLATFORM</span></p>
         </div>
