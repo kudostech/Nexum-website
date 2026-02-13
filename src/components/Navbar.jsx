@@ -12,7 +12,7 @@ function Navbar() {
     <nav id="nav">
       {/* when on mobile */}
       <div
-        className="  md:hidden bg-[#01192b] rounded-b-lg ]
+        className="  md:hidden bg-[#01192b] rounded-b-lg 
  fixed top-0 left-0  w-full items-center px-6 h-16 flex justify-between "
       >
         <div
@@ -23,10 +23,9 @@ function Navbar() {
           }}
           className=" gap-1 items-center flex "
         >
-          <img className="w-6" src={logo} alt=""/>
+          <img className="w-6" src={logo} alt="" />
           <p className="text-white font-bold">NEXUM</p>
         </div>
-
         <button
           className=" text-white cursor-pointer "
           onClick={() => setMenuOpen(!menuOpen)}
@@ -145,8 +144,8 @@ function Navbar() {
 
     "
           >
-            <li className="cursor-pointer"
-              
+            <li
+              className="cursor-pointer"
               onClick={() => {
                 document.getElementById("about")?.scrollIntoView({
                   behavior: "smooth",
@@ -156,55 +155,55 @@ function Navbar() {
             >
               About
             </li>
-            <li className="cursor-pointer"
+            <li
+              className="cursor-pointer"
               onClick={() => {
                 document.getElementById("team")?.scrollIntoView({
                   behavior: "smooth",
-              
                 });
                 setMenuOpen(false);
               }}
             >
               Team
             </li>
-           <li className="cursor-pointer"
+            <li
+              className="cursor-pointer"
               onClick={() => {
                 document.getElementById("vision")?.scrollIntoView({
                   behavior: "smooth",
-              
                 });
                 setMenuOpen(false);
               }}
             >
               Vision
             </li>
-            <li className="cursor-pointer"
+            <li
+              className="cursor-pointer"
               onClick={() => {
                 document.getElementById("buy")?.scrollIntoView({
                   behavior: "smooth",
-              
                 });
                 setMenuOpen(false);
               }}
             >
               Buy
             </li>
-            <li className="cursor-pointer"
+            <li
+              className="cursor-pointer"
               onClick={() => {
                 document.getElementById("blog")?.scrollIntoView({
                   behavior: "smooth",
-              
                 });
                 setMenuOpen(false);
               }}
             >
               Blog
             </li>
-              <li className="cursor-pointer"
+            <li
+              className="cursor-pointer"
               onClick={() => {
                 document.getElementById("team")?.scrollIntoView({
                   behavior: "smooth",
-              
                 });
                 setMenuOpen(false);
               }}
@@ -225,13 +224,12 @@ function Navbar() {
       transition
       
     "
-      onClick={() => {
-                document.getElementById("contact")?.scrollIntoView({
-                  behavior: "smooth",
-              
-                });
-                setMenuOpen(false);
-              }}
+            onClick={() => {
+              document.getElementById("contact")?.scrollIntoView({
+                behavior: "smooth",
+              });
+              setMenuOpen(false);
+            }}
           >
             Contact
           </button>
@@ -248,89 +246,85 @@ function Navbar() {
           className=" flex gap-12
 font-light text-white items-center ml-5 mt-10"
         >
-               <li className="cursor-pointer"
-              
-              onClick={() => {
-                document.getElementById("about")?.scrollIntoView({
-                  behavior: "smooth",
-                });
-                setMenuOpen(false);
-              }}
-            >
-              About
-            </li>
-            <li className="cursor-pointer"
-              onClick={() => {
-                document.getElementById("team")?.scrollIntoView({
-                  behavior: "smooth",
-              
-                });
-                setMenuOpen(false);
-              }}
-            >
-              Team
-            </li>
-           <li className="cursor-pointer"
-              onClick={() => {
-                document.getElementById("vision")?.scrollIntoView({
-                  behavior: "smooth",
-              
-                });
-                setMenuOpen(false);
-              }}
-            >
-              Vision
-            </li>
-            <li className="cursor-pointer"
-              onClick={() => {
-                document.getElementById("buy")?.scrollIntoView({
-                  behavior: "smooth",
-              
-                });
-                setMenuOpen(false);
-              }}
-            >
-              Buy
-            </li>
-            <li className="cursor-pointer"
-              onClick={() => {
-                document.getElementById("blog")?.scrollIntoView({
-                  behavior: "smooth",
-              
-                });
-                setMenuOpen(false);
-              }}
-            >
-              Blog
-            </li>
-              <li className="cursor-pointer"
-              onClick={() => {
-                document.getElementById("team")?.scrollIntoView({
-                  behavior: "smooth",
-              
-                });
-                setMenuOpen(false);
-              }}
-            >
-              Team
-            </li>
-          
+          <li
+            className="cursor-pointer"
+            onClick={() => {
+              document.getElementById("about")?.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+          >
+            About
+          </li>
+          <li
+            className="cursor-pointer"
+            onClick={() => {
+              document.getElementById("team")?.scrollIntoView({
+                behavior: "smooth",
+              });
+         
+            }}
+          >
+            Team
+          </li>
+          <li
+            className="cursor-pointer"
+            onClick={() => {
+              document.getElementById("vision")?.scrollIntoView({
+                behavior: "smooth",
+              });
+            
+            }}
+          >
+            Vision
+          </li>
+          <li
+            className="cursor-pointer"
+            onClick={() => {
+              document.getElementById("buy")?.scrollIntoView({
+                behavior: "smooth",
+              });
+             
+            }}
+          >
+            Buy
+          </li>
+          <li
+            className="cursor-pointer"
+            onClick={() => {
+              document.getElementById("blog")?.scrollIntoView({
+                behavior: "smooth",
+              });
+            
+            }}
+          >
+            Blog
+          </li>
+          <li
+            className="cursor-pointer"
+            onClick={() => {
+              document.getElementById("team")?.scrollIntoView({
+                behavior: "smooth",
+              });
+           
+            }}
+          >
+            Team
+          </li>
         </ul>
 
-        
-          <button onClick={() => {
-                document.getElementById("contact")?.scrollIntoView({
-                  behavior: "smooth",
-              
-                });
-                setMenuOpen(false);
-              }}
-          
-          className="hidden md:flex text-white border px-4 py-2 rounded-md border-[#04adc0] border-l-[#01C09D] mt-10 cursor-pointer ">
-            {" "}
-            Contact
-          </button>
-        
+        <button
+          onClick={() => {
+            document.getElementById("contact")?.scrollIntoView({
+              behavior: "smooth",
+            });
+       
+          }}
+          className="hidden md:flex text-white border px-4 py-2 rounded-md border-[#04adc0] border-l-[#01C09D] mt-10 cursor-pointer "
+        >
+          {" "}
+          Contact
+        </button>
       </div>
     </nav>
   );

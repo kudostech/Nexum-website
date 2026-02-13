@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import cofounder1 from "../assets/cofounder1.png";
 import cofounder2 from "../assets/cofounder2.png";
 import chairman from "../assets/chairman.png";
@@ -24,7 +24,39 @@ import ma2 from "../assets/ma2.png";
 import ibe from "../assets/ibe.png";
 
 function Team() {
-  return (
+
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const shortTextCof1 = 
+    "Panos has a PhD in the area of semantic web services in Information Management from National Technical University of..."
+  const fullTextCof1 = 
+    "Panos has a PhD in the area of semantic web services in Information Management from  National Technical University, he also earned a diploma (MEng) in Electrical Engineering from, National Technical University of Athens. In 2008 Panos was awarded the Best Young Entrepreneur by the Athens Chamber of Commerce.Panos has co-founded and exited numerous number startups in the area of AI, BigData analytics and FinTech in Europe and the USA. He was the leader of IMC Technologies and grew it from pre-revenue to more than €20 million in revenue.Panos led the development of the first discussion analytics platform used by the biggest media groups globally including CNN, CNBC and others implementing targeted personalized analysis of more than 19 million U.S website visitors daily."
+  
+    const shortTextCof2 = 
+    "  Konstantinos has a PhD in Mathematical Sciences from the University of Manchester, he also holds... "
+
+      const fullTextCof2  = 
+      " Konstantinos has a PhD in Mathematical Sciences from the University of Manchester, he also holds a diploma in Mechanical Engineering (MEng) from the National Technical University of Athens. Konstantinos has experience in the shipping industry where he worked at the top-managing positions in Eclipse Navigation Inc/Eclipse Shipmanagement Inc., Dean Marine Advisers (a UK-based shipping advisory firm), TEO Shipping Inc. (Athens-based shipping company owning 7 Post-Panamax, 1 Panamax and third-party management of two 2800TEU  containers). Konstantinos has also worked as an Investment Manager & CFO at European Navigation Group, where he was responsible for the finance department, the S&P department and for all the investments of the group, overseeing assets in excess of $1bn."
+
+const shortTextChairman = " Panos Bethanis earned his Bachelor degree from Brandeis University and holds a JD and a Masters of Business Administrat... "
+const fullTextChairman = " Kristiana Ndreka Aboud has a long experience in sales, marketing and investment relations, starting from 2011 at Vodafone. In 2014 Kristiana started her private education in the areas of finance and FX trading. Kristiana created and educated a large network of financial agents specializing in the crypto industry.In 2019 Kristiana became an advisor and a development consultant of a bunkering company in Monaco. Now she leads the Investment relations of Nexum."
+  
+const shortTextCiro = "Kristiana Ndreka Aboud has a long experience in sales, marketing and investment relations, starting from 2011 at..."
+const fullTextCiro = " Panos Bethanis earned his Bachelor degree from Brandeis University and holds a JD and a Masters of Business Administration from Boston University. Since the 1990s, he has been innovating in the technology, marketing, and data space in the United States and globally with 3  successful exits.Recognizing gaps in retail and growing in-store needs by emerging brands, Panos in 2012 launched Survey.com. In March 2020 he led the acquisition of Survey.com by Trax Retail. In 2020 Panos joined Nexum fintech platform aiming to disrupt the outdated funding processes in the shipping industry. "
+
+const shortTextCm = "Constantinos Mylonakis holds a Bsc (Hons) in Maritime Business from Plymouth University and an MSc in International..."
+const fullTextCm = "Dimitris is a senior corporate financier with a special focus on the shipping industry. In 2017, he co-founded a consulting boutique, Ship Finance Solutions (SFS) that is advising borrowers or lenders on debt finance deals. Since its inception, SFS has successfully advised on more than 30 deals totalling more than $1bn.Prior to launching SFS, Dimitris was a Managing Director and the Head of Greek shipping at Citibank, for four years and he was managing a shipping loans portfolio of about $1.5bn."
+
+const shortTextCmo = "  JDimitrii Matiushin has graduated as BBA student from the University of Applied Sciences in Finland (JAMK)."
+const fullTextCmo = " Dimitrii Matiushin has graduated as BBA student from the University of Applied Sciences in Finland (JAMK). Dimitrii joined crypto space in 2017 and ever since he is witnessing ups & downs of the industry. His primary focus was an intraday trading and token analysis. Dimitrii strongly believes that it is impossible to understand the market and its movement unless you have skin in the game. Pursuing his interest in the industry Dimitrii joined a crypto-marketing agency. He became a leading marketer helping crypto projects to unleash their potential as well as to reach target audience of token holder and community members. His fresh and innovative vision is the core of Nexum marketing. "
+
+const shortTextHocc = " Dimitris is a senior corporate financier with a special focus on the shipping industry. In 2017, he co-founded a consulting boutique."
+const fullTextHocc = "Dimitris is a senior corporate financier with a special focus on the shipping industry. In 2017, he co-founded a consulting boutique, Ship Finance Solutions (SFS) that is advising borrowers or lenders on debt finance deals. Since its inception, SFS has successfully advised on more than 30 deals totalling more than $1bn.Prior to launching SFS, Dimitris was a Managing Director and the Head of Greek shipping at Citibank, for four years and he was managing a shipping loans portfolio of about $1.5bn."
+
+const shortTextMocc = " Jason has more than 20 years of experience in shipping finance. Since 2017 he is a co-founding partner of Ship Finance. "
+const fullTextMocc = " Jason has more than 20 years of experience in shipping finance. Since 2017 he is a co-founding partner of Ship Finance Solutions, a shipping finance advisory firm that advises lenders or Borrowers on debt finance transactions. Previously he had worked for Piraeus Bank for more than 13 years, including acting as the Deputy Head of a shipping portfolio in excess of $4bn. Jason was actively involved in the successful integration of more than $2.5bn of acquired shipping loans within this portfolio and was responsible on the business side for developing the bank’s shipping loan risk assessment model at the time."
+
+return (
     <section id="team">
       <div  className=" md:hidden">
         {" "}
@@ -40,10 +72,17 @@ function Team() {
             <h3 className="text-center text-white mt-4">Panos Georgolios</h3>
             <h6 className="   text-center text-[#02d5b1] mt-2 "> CO-FOUNDER</h6>
             <p className="text-white px-14 mt-2">
-              Panos has a PhD in the area of semantic web services in
-              Information Management from National Technical University of...
+              { isExpanded? fullTextCof1 : shortTextCof1 }
             </p>
-            <h2 className=" px-14 text-white font-medium mt-1"> READ MORE</h2>
+            <h2 className=" px-14 text-emerald-500 font-medium mt-1"
+            onClick={()=> 
+            {
+              setIsExpanded(!isExpanded)
+            }
+
+            }>
+               { isExpanded? "READ LESS" : "READ MORE"}
+               </h2>
           </div>
           <div>
             <img
@@ -56,10 +95,15 @@ function Team() {
             </h3>
             <h6 className="   text-center text-[#02d5b1] mt-2 "> CO-FOUNDER</h6>
             <p className="text-white px-14 mt-2">
-              Konstantinos has a PhD in Mathematical Sciences from the
-              University of Manchester, he also holds...{" "}
+             { isExpanded? fullTextCof2 : shortTextCof2 }
             </p>
-            <h2 className=" px-14 text-white font-medium mt-1"> READ MORE</h2>
+            <h2 className=" px-14 text-emerald-500 font-medium mt-1"
+            onClick={()=> {
+              setIsExpanded(!isExpanded)
+            }}
+            >
+               { isExpanded? "READ LESS" : "READ MORE"}
+               </h2>
           </div>
         </div>
         <h1 className=" text-center text-4xl mt-20 text-white">
@@ -68,7 +112,7 @@ function Team() {
         </h1>
         <div className=" flex gap-4 mx-8 mt-10">
           <div className="flex-1 h-40">
-            <img className="mx-auto mt-6" src={chairman} alt="" />
+            <img className="mx-auto mt-6" src={chairman} alt="chairman" />
           </div>
           <div className="flex-1 h-40  ">
             <h2 className=" text-white mt-6 text-2xl">
@@ -81,11 +125,20 @@ function Team() {
           </div>
         </div>
         <p className=" text-white pl-8 pr-20 ">
-          {" "}
-          Panos Bethanis earned his Bachelor degree from Brandeis University and
-          holds a JD and a Masters of Business Administrat... <br />{" "}
-          <span className="font-bold"> READ MORE</span>{" "}
+          { isExpanded? fullTextChairman : shortTextChairman}
+        <br />{" "}
+          <span className="font-bold text-emerald-500"
+          onClick={()=> {
+             setIsExpanded(!isExpanded)
+          }}
+          > 
+            {
+              isExpanded ? "READ LESS" : "READ MORE"
+            }
+            </span>
         </p>
+
+
         <div className=" flex gap-4 mx-8 mt-10">
           <div className="flex-1 h-40 ">
             <img className="mx-auto mt-6" src={ciro} alt="" />
@@ -102,11 +155,18 @@ function Team() {
           </div>
         </div>
         <p className=" text-white pl-8 pr-20 ">
-          {" "}
-          Kristiana Ndreka Aboud has a long experience in sales, marketing and
-          investment relations, starting from 2011 at...
-          <br /> <span className="font-bold"> READ MORE</span>{" "}
+          { isExpanded? fullTextCiro : shortTextCiro }
+
+          <br /> <span className="font-bold text-emerald-500 "
+          onClick={()=> setIsExpanded(!isExpanded)}> 
+            
+           { isExpanded? " READ LESS" : " READ MORE" }
+            </span>
         </p>
+
+
+
+
         <div className=" flex gap-4 mx-8 mt-10">
           <div className="flex-1 h-40 ">
             <img className="mx-auto mt-6" src={cm} alt="" />
@@ -118,15 +178,19 @@ function Team() {
               <span className=" text- font- text-[#02d5b1]">
                 {" "}
                 Commercial <br /> Manager{" "}
-              </span>{" "}
+              </span>
             </h2>
           </div>
         </div>
         <p className=" text-white pl-8 pr-20 ">
-          {" "}
-          Constantinos Mylonakis holds a Bsc (Hons) in Maritime Business from
-          Plymouth University and an MSc in International...
-          <br /> <span className="font-bold"> READ MORE</span>{" "}
+          { isExpanded? fullTextCm : shortTextCm}
+         
+          <br /> <span className="font-bold text-emerald-500"
+          onClick={() => {
+            setIsExpanded(!isExpanded)
+          }}> 
+            { isExpanded? "READ LESS" : "READ MORE" }
+          </span>
         </p>
         <div className=" flex gap-4 mx-8 mt-10">
           <div className="flex-1 h-40 ">
@@ -145,10 +209,14 @@ function Team() {
           </div>
         </div>
         <p className=" text-white pl-8 pr-20 ">
-          {" "}
-          JDimitrii Matiushin has graduated as BBA student from the University
-          of Applied Sciences in Finland (JAMK).
-          <br /> <span className="font-bold"> READ MORE</span>{" "}
+          {isExpanded? fullTextCmo : shortTextCmo }
+         
+          <br /> <span className="font-bold text-emerald-500"
+          onClick={()=> {
+            setIsExpanded(!isExpanded)
+          }}>
+            {isExpanded? "READ LESS" : "READ MORE" }
+            </span>
         </p>
         <h1 className=" text-center text-4xl mt-20 text-white">
           {" "}
@@ -172,10 +240,16 @@ function Team() {
           </div>
         </div>
         <p className=" text-white pl-8 pr-20 ">
-          {" "}
-          Dimitris is a senior corporate financier with a special focus on the
-          shipping industry. In 2017, he co-founded a consulting boutique.
-          <br /> <span className="font-bold"> READ MORE</span>{" "}
+          { isExpanded? fullTextHocc : shortTextHocc}
+        
+          <br /> <span className="font-bold text-emerald-500"
+          onClick={()=>
+          { setIsExpanded(!isExpanded)
+
+          }
+          }> 
+            { isExpanded? " READ LESS" : "READ MORE" }
+            </span>
         </p>
         <div className=" flex  mx-6 mt-10">
           <div className="flex-1 ">
@@ -193,10 +267,15 @@ function Team() {
           </div>
         </div>
         <p className=" text-white pl-8 pr-20 ">
-          {" "}
-          Jason has more than 20 years of experience in shipping finance. Since
-          2017 he is a co-founding partner of Ship Finance.
-          <br /> <span className="font-bold"> READ MORE</span>{" "}
+          {isExpanded? fullTextMocc : shortTextMocc}
+          
+          <br /> <span className="font-bold text-emerald-500"
+          onClick={() => {
+            setIsExpanded(!isExpanded)
+          }}
+          > 
+          { isExpanded? "READ LESS" : " READ MORE" }
+          </span>{" "}
         </p>
         <h1 className=" px-18 text-center text-4xl mt-20 text-white">
           {" "}
