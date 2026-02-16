@@ -13,7 +13,7 @@ function Navbar() {
       {/* when on mobile */}
       <div
         className="  md:hidden bg-[#01192b] rounded-b-lg 
- fixed top-0 left-0  w-full items-center px-6 h-16 flex justify-between "
+ fixed top-0 left-0  w-full items-center px-8 h-16 flex justify-between "
       >
         <div
           onClick={() => {
@@ -21,7 +21,7 @@ function Navbar() {
               behavior: "smooth",
             });
           }}
-          className=" gap-1 items-center flex "
+          className=" gap-1 items-center flex cursor-pointer "
         >
           <img className="w-6" src={logo} alt="" />
           <p className="text-white font-bold">NEXUM</p>
@@ -60,7 +60,7 @@ function Navbar() {
           {/* Menu items */}
           <ul className=" flex text-5xl flex-col h-full items-center  text-white gap-10 ">
             <li
-              className="p-4 "
+              className="p-4 cursor-pointer  "
               onClick={() => {
                 document.getElementById("about")?.scrollIntoView({
                   behavior: "smooth",
@@ -72,7 +72,7 @@ function Navbar() {
             </li>
 
             <li
-              className="p-4 "
+              className="p-4 cursor-pointer "
               onClick={() => {
                 document.getElementById("team")?.scrollIntoView({
                   behavior: "smooth",
@@ -84,7 +84,7 @@ function Navbar() {
             </li>
 
             <li
-              className="p-4 "
+              className="p-4 cursor-pointer "
               onClick={() => {
                 document.getElementById("features")?.scrollIntoView({
                   behavior: "smooth",
@@ -96,7 +96,7 @@ function Navbar() {
             </li>
 
             <li
-              className="p-4 "
+              className="p-4 cursor-pointer  "
               onClick={() => {
                 document.getElementById("faq")?.scrollIntoView({
                   behavior: "smooth",
@@ -108,7 +108,7 @@ function Navbar() {
             </li>
 
             <li
-              className="p-4 "
+              className="p-4 cursor-pointer "
               onClick={() => {
                 document.getElementById("token")?.scrollIntoView({
                   behavior: "smooth",

@@ -7,7 +7,7 @@ import mobilebuy from '../assets/mobilebuy.png'
 import largebuy from '../assets/largebuy.png'
 function Faq() {
   return (
-    <section>
+    <section id="faq">
       <div className="md:hidden"> {/*     When on mobile screen */}
         <h1 className="text-white text-4xl mx-24 mt-20 text-center leading-10">
           Frequently Asked Questions

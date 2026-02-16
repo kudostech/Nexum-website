@@ -78,7 +78,7 @@ function Aboutsection() {
           </p>
           <div className="flex text-white gap-2 mt-15 px-4 ">
             <p className="items-center mt-1.5"> Explore our community:</p>
-            <div className=" gap-3 cursor-pointer mt-3 flex pb-2 ">
+            <div className=" gap-3 cursor-pointer mt-2 flex pb-2 ">
            <a href="http://web.telegram.org/a/"
            target="_blank"
            rel="noopener noreferrer"

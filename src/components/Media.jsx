@@ -9,32 +9,50 @@ function Media() {
   return (
     <div >
 
-        <div className=' md:hidden mt-20 mb-20  '> {/* mobile version */}
+        <div className=' md:hidden mt-20 mb-20 flex flex-col items-center justify-center'> {/* mobile version */}
             <h3 className="text-white text-center mx-auto mb-4 font-extralight">
                     {" "}
                     Media about us:
                   </h3>
-                  <div className=" flex ml-30 items-center mb-4  ">
+                  <div className=" flex justify-center items-center mb-4  ">
                     <div className=" border-2 bg-white rounded-full w-8 h-8 "></div>
                     <div className=" border-2 bg-white rounded-full w-5 h-8 "></div>
                     <div className=" border-2 bg-white rounded-full w-3 h-8 "></div>
                     <h2 className="text-white ml-1 text-3xl font-bold"> Medium </h2>
                   </div>
         
-                  <p className=" text-white px-28 leading-10">
+                  <p className=" text-white text-center  px-28 leading-10">
                     3 Fraser Street #05-25 Duo Tower, Singapore 189352
                   </p>
                   <h3 className="text-white mt-10 text-center"> Official Channels:</h3>
                   <div className=" gap-3 cursor-pointer text-white  flex justify-center mb-10">
-                    <FontAwesomeIcon icon={faTelegram} />
-                    <FontAwesomeIcon icon={faTwitter} />
+                    <a href="http://web.telegram.org/a/"
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              >
+                             <FontAwesomeIcon icon={faTelegram} /></a>    
+                                
+                                   <a
+                                 href="https://x.com"
+                                 target="_blank"
+                                 rel="noopener noreferrer"
+                                 >
+                     <FontAwesomeIcon icon={faTwitter} />
+                   </a>
+                         
                   </div>
+                  <a href="http://web.telegram.org/a/"
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              >
                   <button className=" mx-8 text-white border-[#048d91] hover:bg-[#012947] border-2 py-4 px-16 items-center  rounded-xl cursor-pointer ">
                     <div className="flex items-center justify-center gap-3">
                       <p className="text-xl"> Join our community</p>
-                      <FontAwesomeIcon icon={faTelegram} />
+                     
+                             <FontAwesomeIcon icon={faTelegram} />
                     </div>
                   </button>
+                  </a> 
         </div>
         
          <div className=" hidden mt-10  md:flex lg:mx-40"> {/* desktop version */}
@@ -66,17 +84,34 @@ function Media() {
                 {" "}
                 Official Channels:
               </h3>
-              <div className=" gap-3 mt-1 cursor-pointer text-white  flex justify-center">
-                <FontAwesomeIcon icon={faTelegram} />
-                <FontAwesomeIcon icon={faTwitter} />
+              <div className=" gap-3 mt-1 cursor-pointer text-white  flex justify-center items-center">
+           <a href="http://web.telegram.org/a/"
+                     target="_blank" 
+                     rel="noopener noreferrer"
+                     >
+                    <FontAwesomeIcon icon={faTelegram} /></a>     
+                          <a
+                        href="https://x.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+                
               </div>
+               <a href="http://web.telegram.org/a/"
+                     target="_blank" 
+                     rel="noopener noreferrer"
+                     >
               <button className="flex  text-white hover:bg-[#012947] border-[#048d91] m-2 p-2 border-2 items-center mt-2 rounded-xl cursor-pointer gap-2 ">
                 <p className="text-white text-nowrap">
                   {" "}
                   Join our community
                 </p>
-                <FontAwesomeIcon icon={faTelegram} />
+                         
+                    <FontAwesomeIcon icon={faTelegram} />  
               </button>
+              </a>
             </div>
 
             <div className=" m-2  flex-1  ">
