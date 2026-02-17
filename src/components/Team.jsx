@@ -65,7 +65,7 @@ return (
         <div className="flex flex-col gap-10">
           <div>
             <img
-              className="mx-auto w-20 mt-10"
+              className="mx-auto w-20 mt-10 ]"
               src={cofounder1}
               alt="Co-founder 1"
             />
@@ -517,7 +517,7 @@ return (
         {/* when on large screens */}
         <h1 className=" text-center text-5xl mt-40 text-white"> Co-Founders</h1>
         <div className=" flex gap-4 justify-center mt-10 mx-8 ">
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className="border-2 hover:bg-[#012743] border-[#022e4d] p-2 flex-1 rounded-2xl ">
             <img className="mx-auto" src={cofounder1} alt="Co-founder 1" />
             <h2 className="text-white text-center mt-2">Panos Georgolios</h2>
             <h4 className="text-[#02d5b1] text-center">CO-FOUNDER</h4>
@@ -537,7 +537,7 @@ return (
               analysis of more than 19 million U.S website visitors daily.
             </p>
           </div>
-          <div className=" border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className=" hover:bg-[#012743] border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
             <img className="mx-auto" src={cofounder2} alt="Co-founder 1" />
             <h2 className="text-white text-center mt-2">
               Konstantinos Vonatsos
@@ -565,11 +565,11 @@ return (
           Business Team{" "}
         </h1>
         <div className=" flex gap-4 justify-center mt-10 mx-8 ">
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className="border-2 hover:bg-[#012743] border-[#022e4d] p-2 flex-1 rounded-2xl ">
             <div className=" flex justify-center items-center gap-4 ">
               <div>
                 {" "}
-                <img src={chairman} alt="" />
+                <img src={chairman} alt="" /> 
               </div>
               <div>
                 <h2 className="text-white">
@@ -594,7 +594,7 @@ return (
             </p>
           </div>
 
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className="border-2 border-[#022e4d] hover:bg-[#012743] p-2 flex-1 rounded-2xl ">
             <div className=" flex justify-center items-center gap-4 ">
               <div>
                 {" "}
@@ -626,7 +626,7 @@ return (
           </div>
         </div>
         <div className=" flex gap-4 justify-center mt-10 mx-8 ">
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className="border-2 border-[#022e4d] hover:bg-[#012743] p-2 flex-1 rounded-2xl ">
             <div className=" flex justify-center items-center gap-4 ">
               <div>
                 {" "}
@@ -656,7 +656,7 @@ return (
             </p>
           </div>
 
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className="border-2 hover:bg-[#012743] border-[#022e4d] p-2 flex-1 rounded-2xl ">
             <div className=" flex justify-center items-center gap-4 ">
               <div>
                 {" "}
@@ -694,7 +694,7 @@ return (
           Credit Committe{" "}
         </h1>
         <div className=" flex gap-4 justify-center mt-10 mx-8 ">
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className="border-2 hover:bg-[#012743] border-[#022e4d] p-2 flex-1 rounded-2xl ">
             <div className=" flex justify-center items-center gap-4 ">
               <div>
                 {" "}
@@ -725,7 +725,7 @@ return (
             </p>
           </div>
 
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className="border-2 hover:bg-[#012743] border-[#022e4d] p-2 flex-1 rounded-2xl ">
             <div className=" flex justify-center items-center gap-4 ">
               <div>
                 {" "}
@@ -769,7 +769,7 @@ return (
             </div>
           </div>
 
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className="border-2 hover:bg-[#012743] border-[#022e4d] p-2 flex-1 rounded-2xl ">
             <div className=" flex justify-center items-center gap-4 ">
               <div>
                 {" "}
@@ -785,7 +785,7 @@ return (
             </div>
           </div>
 
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className="border-2 hover:bg-[#012743] border-[#022e4d] p-2 flex-1 rounded-2xl ">
             <div className=" flex justify-center items-center gap-4 ">
               <div>
                 {" "}
@@ -804,7 +804,7 @@ return (
           </div>
         </div>
         <div className=" flex gap-4  mt-10 mx-8 ">
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className="border-2 hover:bg-[#012743] border-[#022e4d] p-2 flex-1 rounded-2xl ">
             <div className=" flex justify-center items-center gap-4 ">
               <div>
                 {" "}
@@ -820,7 +820,7 @@ return (
             </div>
           </div>
 
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className="border-2 hover:bg-[#012743] border-[#022e4d] p-2 flex-1 rounded-2xl ">
             <div className=" flex justify-center items-center gap-4 ">
               <div>
                 {" "}
@@ -836,7 +836,7 @@ return (
             </div>
           </div>
 
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className="border-2 hover:bg-[#012743] border-[#022e4d] p-2 flex-1 rounded-2xl ">
             <div className=" flex justify-center items-center gap-4 ">
               <div>
                 {" "}
@@ -868,7 +868,7 @@ return (
             </div>
           </div>
 
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className="border-2 hover:bg-[#012743] border-[#022e4d] p-2 flex-1 rounded-2xl ">
             <div className=" flex justify-center items-center gap-4 ">
               <div>
                 {" "}
@@ -884,7 +884,7 @@ return (
             </div>
           </div>
 
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className="border-2 hover:bg-[#012743] border-[#022e4d] p-2 flex-1 rounded-2xl ">
             <div className=" flex justify-center items-center gap-4 ">
               <div>
                 {" "}
@@ -905,7 +905,7 @@ Franklin E Omene
         </div>
         
         <div className=" flex gap-4  mt-10 mx-8 ">
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className="border-2 hover:bg-[#012743] border-[#022e4d] p-2 flex-1 rounded-2xl ">
             <div className=" flex justify-center items-center gap-4 ">
               <div>
                 {" "}
@@ -921,7 +921,7 @@ Franklin E Omene
             </div>
           </div>
 
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className="border-2 hover:bg-[#012743] border-[#022e4d] p-2 flex-1 rounded-2xl ">
             <div className=" flex justify-center items-center gap-4 mt-4 ">
               <div>
                 {" "}
@@ -937,7 +937,7 @@ Franklin E Omene
             </div>
           </div>
 
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className=" hover:bg-[#012743] border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
             <div className=" flex justify-center items-center gap-4 ">
               <div>
                 {" "}
@@ -955,7 +955,7 @@ Franklin E Omene
         </div>
 
           <div className=" flex gap-4  mt-10 mx-8 ">
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className=" hover:bg-[#012743] border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
             <div className=" flex justify-center items-center gap-4 ">
               <div>
                 {" "}
@@ -971,7 +971,7 @@ Franklin E Omene
             </div>
           </div>
 
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className=" hover:bg-[#012743] border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
             <div className=" flex justify-center items-center gap-4 mt-4 ">
               <div>
                 {" "}
@@ -987,7 +987,7 @@ Franklin E Omene
             </div>
           </div>
 
-          <div className="border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
+          <div className=" hover:bg-[#012743] border-2 border-[#022e4d] p-2 flex-1 rounded-2xl ">
             <div className=" flex justify-center items-center gap-4 ">
               <div>
                 {" "}

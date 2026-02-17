@@ -213,7 +213,7 @@ function FeatureSection() {
           <div className="md:hidden flex flex-col gap-4 ml-6 ">
             {" "}
             {/* when on mobile screen */}
-            <div className="mt-10 md:border border-[#023153] rounded-xl md:w-85">
+            <div className="mt-10 md:border border-[#023153] hover:bg-[#012743] rounded-xl md:w-85">
               <p className=" text-[#00f0c4] text-4xl  font-medium text-center ">
                 Problems
               </p>
@@ -259,7 +259,7 @@ function FeatureSection() {
                 </div>
               </div>
             </div>
-            <div className="mt-10 md:border border-[#023153] rounded-xl md:w-85">
+            <div className="mt-10 md:border hover:bg-[#012743] border-[#023153] rounded-xl md:w-85">
               <p className="  text-[#00f0c4] text-4xl font-medium text-center ">
                 Solution
               </p>
@@ -280,7 +280,7 @@ function FeatureSection() {
           <div className="hidden md:flex gap-4 ml-6 lg:ml-70">
             {" "}
             {/* when on larger screen */}
-            <div className="mt-15 md:border border-[#023153] rounded-xl md:w-85">
+            <div className="mt-15 md:border border-[#023153] rounded-xl md:w-85 hover:bg-[#012743] cursor-pointer">
               <p className=" text-[#00f0c4] text-4xl mt-10 font-medium text-center ">
                 Problems
               </p>
@@ -326,7 +326,7 @@ function FeatureSection() {
                 </div>
               </div>
             </div>
-            <div className="mt-15 md:border border-[#023153] rounded-xl md:w-85">
+            <div className="mt-15 md:border border-[#023153] rounded-xl md:w-85 hover:bg-[#012743] cursor-pointer">
               <p className=" mt-10 text-[#00f0c4] text-4xl font-medium text-center ">
                 Solution
               </p>
