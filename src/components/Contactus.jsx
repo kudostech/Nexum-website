@@ -18,7 +18,7 @@ function Contactus() {
 
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
-
+  const [errorMessage, setErrorMessage] = useState("");
 
   const [agreeError, setAgreeError] = useState("");
   
@@ -34,20 +34,33 @@ function Contactus() {
     if (name === "agree" && checked) {
       setAgreeError("");
     }
-
     setError(false);
-    setSuccess(false);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (
-      !formData.firstName ||
-      !formData.lastName ||
-      !formData.email ||
-      !formData.message 
-    ) {
+
+    if (!formData.firstName){
+      setErrorMessage( "“First name is not allowed to be empty")
+      setError(true);
+      return;
+    }
+
+     if (!formData.lastName){
+      setErrorMessage( "“Last name is not allowed to be empty")
+      setError(true);
+      return;
+    }
+
+    if (!formData.email){
+      setErrorMessage( "“Email is required")
+      setError(true);
+      return;
+    }
+
+     if (!formData.message){
+      setErrorMessage( "“Message is not allowed to be empty")
       setError(true);
       return;
     }
@@ -87,7 +100,9 @@ function Contactus() {
           className=" mx-8 mt-10 gap-6 flex flex-col "
         >
           
-          {error && <Failmessage onClose={() => setError(false)} />}
+          {error && <Failmessage 
+          message={errorMessage}
+          onClose={() => setError(false)} />}
 
           <input
             className="border-[#1a3040] p-5 rounded-md border-2  text-[#d0dde6] "
@@ -170,7 +185,9 @@ function Contactus() {
           </div>
           <form onSubmit={handleSubmit} className=" w-3/5  ">
             <div className=" flex gap-4  ">
-                {error && <Failmessage onClose={() => setError(false)} />}
+                {error && <Failmessage 
+                  message={errorMessage}
+                onClose={() => setError(false)} />}
               <input
                 className="border-[#1a3040] p-2 rounded-md border-2 flex-1 text-[#d0dde6] "
                 type="text"
@@ -236,7 +253,8 @@ function Contactus() {
             <button className="  hover:bg-[#012947] mt-4  text-white border-[#048d91] border-2 py-2 px-40 rounded-xl cursor-pointer ">
               Send
             </button>
-            {success && <Sentmessage />}
+            {success && <Sentmessage
+            onClose={() => setSuccess(false)} />}
           </form>
         </div>
       </div>
