@@ -10,7 +10,7 @@ NEXUM (NEXM) is a utility token designed to power the multi-billion-dollar Shipp
 
 The NEXUM platform provides funding and financial solutions to traders in the shipping and oil industry in a secure and efficient way. By leveraging blockchain and decentralized finance (DeFi), NEXUM improves transparency, reduces costs, and simplifies cross-border transactions.
 
-Visit our demo here:- Visit website here:[https://nexum-website-kudos.app/](https://nexum-website-kudos.vercel.app/)
+Visit our demo here:- [https://nexum-website-kudos.app/](https://nexum-website-kudos.vercel.app/)
 
 ---
 
